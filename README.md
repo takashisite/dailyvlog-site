@@ -24,7 +24,7 @@ python3 -m http.server 4176
 - Custom domain: `dailyvlog.mizuno.app`
 - Support contact: `dailyvlog@mizuno.app`
 
-Connect GitHub `main` to Cloudflare Pages for production deploys.
+GitHub `main` is connected to Cloudflare Pages for production deploys.
 
 ## App Store Connect URLs
 
