@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240">
+  <defs>
+    <pattern id="perforations" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect x="8" y="11" width="14" height="14" rx="2.5" fill="none" stroke="#fff" stroke-width="3"/>
+    </pattern>
+  </defs>
+  <g fill="none" stroke="#fff" stroke-width="3">
+    <rect x="1.5" y="1.5" width="597" height="237" rx="2"/>
+    <path d="M1.5 40.5h597M1.5 199.5h597"/>
+    <rect x="28" y="47" width="170" height="146" rx="2"/>
+    <rect x="215" y="47" width="170" height="146" rx="2"/>
+    <rect x="402" y="47" width="170" height="146" rx="2"/>
+  </g>
+  <rect width="600" height="40" fill="url(#perforations)"/>
+  <rect y="200" width="600" height="40" fill="url(#perforations)"/>
+</svg>

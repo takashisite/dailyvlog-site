@@ -624,6 +624,7 @@ p {
 }
 
 .doc-hero {
+  --doc-film-rgb: 18, 217, 255;
   position: relative;
   min-height: 390px;
   display: flex;
@@ -638,15 +639,15 @@ p {
   right: 2%;
   width: 38%;
   aspect-ratio: 1.6;
-  border: 1px solid rgba(18, 217, 255, 0.22);
-  background:
-    linear-gradient(90deg, transparent 8%, rgba(18, 217, 255, 0.08) 8% 10%, transparent 10% 90%, rgba(22, 119, 255, 0.08) 90% 92%, transparent 92%),
-    repeating-linear-gradient(90deg, transparent 0 9%, rgba(255, 255, 255, 0.1) 9% 10%);
-  opacity: 0.8;
+  pointer-events: none;
+  background: rgba(var(--doc-film-rgb), 0.34);
+  -webkit-mask: url("/assets/film-strip.svg") center / 100% 100% no-repeat;
+  mask: url("/assets/film-strip.svg") center / 100% 100% no-repeat;
+  filter: drop-shadow(0 0 18px rgba(var(--doc-film-rgb), 0.08));
 }
 
-.doc--privacy .doc-hero::after {
-  border-color: rgba(141, 56, 255, 0.28);
+.doc--privacy .doc-hero {
+  --doc-film-rgb: 176, 86, 255;
 }
 
 .doc-hero h1 {
@@ -1008,7 +1009,7 @@ p {
     right: 0;
     bottom: 20px;
     width: 52%;
-    opacity: 0.35;
+    opacity: 0.7;
   }
 
   .doc-content {
